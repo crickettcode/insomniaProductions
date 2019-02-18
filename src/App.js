@@ -4,6 +4,7 @@ import TodoList from './TodoList'
 import TodoItems from './TodoItems'
 import Footer from './Footer'
 import Button from './Button'
+import Counter from './Counter'
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
     this.state = {
       items:[],
       currentItem:{text:'',key:''},
+      
     }
   }
   handleInput = e => {
@@ -56,6 +58,7 @@ class App extends Component {
        <TodoItems entries={this.state.items}deleteItem={this.deleteItem}/>
        <Footer/>
        <Button/>
+       <Counter/>
       
       </div>
     );

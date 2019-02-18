@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import Counter from './Counter'
 
 
 class Footer extends Component {
@@ -27,13 +28,14 @@ class Footer extends Component {
                 
                     <div>
                         <button class="comic"onClick={this.getXkcd}style={{backgroundColor:this.state.bgColor}}>Comic</button>
-                        <h1>Its not that Serious...</h1>
+                        <h2>Its not that Serious...</h2>
     
                         <br />
-                        <img src={this.state.xkcd.img} />
+                        <img width={400} height={300} mode='fit' src={this.state.xkcd.img} />
                         {this.state.xkcd.link}
                         <br />
-                        <h2>{this.state.xkcd.alt}</h2>
+                        <p>{this.state.xkcd.alt}</p>
+                        {/* <Counter/> */}
     
                     </div>
               
