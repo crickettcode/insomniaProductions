@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       items:[],
       currentItem:{text:'',key:''},
+      counter:0
       
     }
   }
@@ -48,6 +49,21 @@ class App extends Component {
     })
   }
 
+  handleClick = () => {
+    this.setState(({ counter }) => ({
+        counter: counter + 1,
+        text: "Very Much",
+       
+    }));
+};
+
+reset = () => {
+  this.setState ({
+      counter: 0,
+      text: "Like?"
+  })
+}
+
   render() {
     return (
       <div className="App">
@@ -56,9 +72,10 @@ class App extends Component {
        handleInput={this.handleInput}
        currentItem={this.state.currentItem}/>
        <TodoItems entries={this.state.items}deleteItem={this.deleteItem}/>
-       <Footer/>
+       <Footer resetLike={this.reset}/>
        <Button/>
-       <Counter/>
+       <Counter handleClick={this.handleClick}
+       counter={this.state.counter}/>
       
       </div>
     );

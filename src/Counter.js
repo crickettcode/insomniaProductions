@@ -4,42 +4,22 @@ import React, { Component } from 'react'
 class Counter extends Component {
     constructor(props){
     super(props)
-    this.handleClick= this.handleClick.bind(this);
-    this.reset= this.reset.bind(this);
-
-    
+   
     this.state = {
-       count: 0,
-        text: "Like?",
-        isHovering: false,
-        isActive: false,
-        // key:this.state.counter
-       
-    };
+        // count: 0,
+         text: "Like?",
+         isHovering: false,
+         isActive: false,
+      
+    }
   
+  }
+
     
-   
-
-    }
-
   
-      handleClick = () => {
-        this.setState(({ count }) => ({
-            count: count + 1,
-            text: "Very Much",
-           
-        }));
-    };
 
-    reset = () => {
-        this.setState ({
-            count: 0,
-            text: "Like?"
-        })
-    }
    
-
-    handleMouseOver() {
+     handleMouseOver() {
         this.setState({ isHovering: true, text: "Like?"});
      }
     
@@ -49,14 +29,13 @@ class Counter extends Component {
     
 
  render() {
-
-        return (
-
-            <button class="comic"
+        
+    return (
+             <button className="comic"
                 onMouseOver={this.handleMouseOver.bind(this)}
                 onMouseOut={this.handleMouseOut.bind(this)} 
-                onClick={this.handleClick}>{this.state.count}{this.state.text}
-                {this.reset}</button>
+                onClick={this.props.handleClick}>{this.props.counter}{this.state.text}
+                </button>
          )
     }
 }
