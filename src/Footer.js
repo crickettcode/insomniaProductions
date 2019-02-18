@@ -20,11 +20,11 @@ class Footer extends Component {
         }
     
         render() {
-    
+          
             return (
                 
                     <div>
-                        <button class="ui pink inverted button" onClick={this.getXkcd}>Comic</button>
+                        <button class="comic"onClick={this.getXkcd}>Comic</button>
                         <h1>Its not that Serious...</h1>
     
                         <br />

@@ -38,6 +38,9 @@ body {
   cursor: pointer;
 }
 
+
+
+
 .todoListMain .theList {
   list-style: none;
   color:white;
@@ -76,6 +79,22 @@ ul.theList {
 .todoListMain .theList li:hover {
   background-color: pink;
   cursor: pointer;
+}
+
+.comic {
+  padding: 5px;
+  font-size:14px;
+  margin:10px;
+  margin-right:0px;
+  background-color:black;
+  color:#fff;
+  border: 2px solid black;}
+   button:hover {
+    background-color: pink;
+    border: 2px solid pink;
+    cursor: pointer;
+  
+
 }
 
 /* code {
