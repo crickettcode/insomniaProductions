@@ -4,12 +4,21 @@ import Counter from './Counter'
 
 
 class Footer extends Component {
-
+    constructor(props) {
+        super(props);
+    //     this.handleClick= this.handleClick.bind(this);
+    // this.reset= this.reset.bind(this);
+    
+        
+    
+    }
         state = {
-            xkcd: {}
+            xkcd: {},
+
+           
         }
     
-   
+       
     
         getXkcd = async () => {
             const random = Math.floor((Math.random() * 2000) + 1);
@@ -21,20 +30,22 @@ class Footer extends Component {
             })
     
         }
+        
     
         render() {
           
             return (
                 
                     <div>
-                        <button class="comic"onClick={this.getXkcd}style={{backgroundColor:this.state.bgColor}}>Comic</button>
+                        <button class="comic"onClick=
+                        {this.getXkcd}style={{backgroundColor:this.state.bgColor}}>Comic</button>
                         <h2>Its not that Serious...</h2>
     
                         <br />
                         <img width={400} height={300} mode='fit' src={this.state.xkcd.img} />
                         {this.state.xkcd.link}
                         <br />
-                        <p>{this.state.xkcd.alt}</p>
+                        <h5>{this.state.xkcd.alt}</h5>
                         {/* <Counter/> */}
     
                     </div>
