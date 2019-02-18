@@ -20,6 +20,7 @@ body {
   font-size:16px;
   border: 2px solid #fff;
   width:165px;
+  outline: none;
 }
 
 .todoListMain .header button {
@@ -30,12 +31,14 @@ body {
   background-color:black;
   color:#fff;
   border: 2px solid black;
+  outline: none;
 }
 
 .todoListMain .header button:hover {
   background-color: pink;
   border: 2px solid pink;
   cursor: pointer;
+  outline: none;
 }
 
 
@@ -88,14 +91,16 @@ ul.theList {
   margin-right:0px;
   background-color:black;
   color:#fff;
+  outline: none;
   border: 2px solid black;}
    button:hover {
     background-color: pink;
     border: 2px solid pink;
     cursor: pointer;
-  
+    outline: none;
+  }
 
-}
+  
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -3,6 +3,7 @@ import './App.css';
 import TodoList from './TodoList'
 import TodoItems from './TodoItems'
 import Footer from './Footer'
+import Button from './Button'
 
 
 class App extends Component {
@@ -54,6 +55,7 @@ class App extends Component {
        currentItem={this.state.currentItem}/>
        <TodoItems entries={this.state.items}deleteItem={this.deleteItem}/>
        <Footer/>
+       <Button/>
       
       </div>
     );
