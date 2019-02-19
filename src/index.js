@@ -24,7 +24,7 @@ const routing = (
   )
 
 
-ReactDOM.render(<App/>,routing, document.getElementById('root'))
+ReactDOM.render(routing, document.getElementById('root'))
 
 
 
