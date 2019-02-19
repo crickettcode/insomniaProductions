@@ -13,9 +13,7 @@ class Footer extends Component {
 
            }
          
-          
-    
-        getXkcd = async () => {
+           getXkcd = async () => {
             const random = Math.floor((Math.random() * 2000) + 1);
             const xkcd = await axios.get(`https://xkcd.now.sh/${random}`)
             this.props.resetLike()
@@ -25,7 +23,6 @@ class Footer extends Component {
     
             })
            
-    
         }
         
     

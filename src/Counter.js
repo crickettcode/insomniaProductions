@@ -6,7 +6,6 @@ class Counter extends Component {
     super(props)
    
     this.state = {
-        // count: 0,
          text: "Like?",
          isHovering: false,
          isActive: false,
@@ -15,11 +14,7 @@ class Counter extends Component {
   
   }
 
-    
-  
-
-   
-     handleMouseOver() {
+    handleMouseOver() {
         this.setState({ isHovering: true, text: "Like?"});
      }
     
