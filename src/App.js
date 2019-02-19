@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 import TodoList from './TodoList'
 import TodoItems from './TodoItems'
 import Footer from './Footer'
 import Button from './Button'
 import Counter from './Counter'
+import SavedTasks from'./SavedTasks'
+
+
 
 
 class App extends Component {
@@ -76,6 +80,7 @@ reset = () => {
        <Button/>
        <Counter handleClick={this.handleClick}
        counter={this.state.counter}/>
+       <SavedTasks/>
       
       </div>
     );
