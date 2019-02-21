@@ -7,6 +7,7 @@ import Footer from './Footer'
 import Button from './Button'
 import Counter from './Counter'
 import SavedTasks from'./SavedTasks'
+// import Like from './Like'
 
 
 
@@ -18,6 +19,7 @@ class App extends Component {
       items:[],
       currentItem:{text:'',key:''},
       counter:0
+      // count:0
       
     }
   }
@@ -54,7 +56,7 @@ class App extends Component {
   }
 
   handleClick = () => {
-    this.setState(({ counter }) => ({
+    this.setState(({ counter}) => ({
         counter: counter + 1,
         text: "Very Much",
        
@@ -81,7 +83,8 @@ reset = () => {
        <Counter handleClick={this.handleClick}
        counter={this.state.counter}/>
        <SavedTasks/>
-      
+      {/* <Like handleClick={this.handleClick}
+       count={this.state.count}/> */}
       </div>
     );
   }

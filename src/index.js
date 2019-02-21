@@ -6,6 +6,7 @@ import TodoList from './TodoList'
 import TodoItems from './TodoItems'
 import Footer from './Footer'
 import Button from './Button'
+import Like from './Like'
 import Counter from './Counter'
 import SavedTasks from'./SavedTasks'
 import App from './App';
@@ -19,6 +20,7 @@ const routing = (
         <Route path="/TodoList" component={TodoList} />
         <Route path="/SavedTasks" component={SavedTasks} />
         <Route path="/Button" component={Button} />
+        <Route path="/Like" component={Like} />
        </div>
     </Router>
   )

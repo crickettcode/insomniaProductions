@@ -9,6 +9,7 @@ class Counter extends Component {
          text: "Like?",
          isHovering: false,
          isActive: false,
+        //  counter:0
       
     }
   
