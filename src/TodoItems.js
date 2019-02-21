@@ -17,6 +17,17 @@ createTasks = item => {
         )
       }
     render() {
+
+      // var CommentBox = React.createClass({
+      //   render: function() {
+      //     return (
+      //       <div className="commentBox">
+      //         Hello, world! I am a CommentBox.
+      //       </div>
+      //     );
+      //   }
+      // });
+      
       const todoEntries = this.props.entries
       const listItems = todoEntries.map(this.createTasks)
   

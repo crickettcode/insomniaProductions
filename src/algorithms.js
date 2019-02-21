@@ -90,3 +90,6 @@ function list(names){
     } else {
     return array }
     }
+
+    //have to know how everything works so that you can break it apart and 
+    //add actions to build process 
