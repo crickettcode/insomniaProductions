@@ -79,7 +79,8 @@ reset = () => {
        currentItem={this.state.currentItem}/>
        <TodoItems entries={this.state.items}deleteItem={this.deleteItem}/>
        <Footer resetLike={this.reset}/>
-       <Button/>
+       <Button handleClick={this.handleClick}
+       counter={this.state.counter}/>
        <Counter handleClick={this.handleClick}
        counter={this.state.counter}/>
        <SavedTasks/>
