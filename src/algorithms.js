@@ -93,3 +93,17 @@ function list(names){
 
     //have to know how everything works so that you can break it apart and 
     //add actions to build process 
+
+    //import some from './somefile';
+//import {someVar, someVar2} from './somefile';
+
+// export default "test"
+
+// export const someVar = 'test';
+// export const someVar2 = 'test';
+
+
+// Both naming choices occur in the parent component class - t
+// hat is, in the component class that defines the event handler and passes it.
+
+

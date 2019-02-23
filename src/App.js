@@ -7,6 +7,7 @@ import Footer from './Footer'
 import Button from './Button'
 import Counter from './Counter'
 import SavedTasks from'./SavedTasks'
+import ProjectButton from './ProjectButton'
 // import Like from './Like'
 
 
@@ -79,11 +80,12 @@ reset = () => {
        currentItem={this.state.currentItem}/>
        <TodoItems entries={this.state.items}deleteItem={this.deleteItem}/>
        <Footer resetLike={this.reset}/>
-       <Button handleClick={this.handleClick}
-       counter={this.state.counter}/>
+       {/* <Button handleClick={this.handleClick}
+       counter={this.state.counter}/> */}
        <Counter handleClick={this.handleClick}
        counter={this.state.counter}/>
        <SavedTasks/>
+       <ProjectButton/>
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
       </div>
