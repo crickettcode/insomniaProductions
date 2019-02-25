@@ -16,8 +16,9 @@ render() {
     return (
         
         <div>
-            	<button className= "comic" onClick = {this.props.onClick}
-				// className ={ this.props.light ? 'light-button' : 'dark-button' }>
+            	<button className="comic" onClick = {this.props.onClick}
+                // className ={ this.props.light ? 'light-button' : 'dark-button' }
+                
 				>Whoa
 			</button>
             </div>

@@ -8,6 +8,10 @@ import Button from './Button'
 import Counter from './Counter'
 import SavedTasks from'./SavedTasks'
 import ProjectButton from './ProjectButton'
+import VideoPlayer from './VideoPlayer'
+import Menu from './Menu'
+
+
 // import Like from './Like'
 
 
@@ -86,6 +90,8 @@ reset = () => {
        counter={this.state.counter}/>
        <SavedTasks/>
        <ProjectButton/>
+       <VideoPlayer/>
+       <Menu/>
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
       </div>

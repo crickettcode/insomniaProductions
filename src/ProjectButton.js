@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import Button from './Button';
 import ReactDOM from 'react-dom';
+import { NONAME } from 'dns';
 
 class ProjectButton extends Component {
   constructor(props){
     super(props);
     this.state = {
       color:[6,100,85]
+    
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -26,6 +28,7 @@ class ProjectButton extends Component {
   isLight() {
     const rgb = this.state.color;
     return rgb.reduce((a,b) => a+b) < 127 * 3;
+
   }
 
   applyColor() {
@@ -50,10 +53,9 @@ class ProjectButton extends Component {
   render() {
     return (
       <div>
-        <h1 className={this.isLight() ? 'white' : 'black'}>
-      Your color is 
-			{this.formatColor(this.state.color)}
-        </h1>
+        <h6 className={this.isLight() ? 'white' : 'black'}>
+            {this.formatColor(this.state.color)}
+        </h6>
 <Button onClick ={this.handleClick} light ={this.isLight()}/>
       </div>
     );

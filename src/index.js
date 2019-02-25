@@ -12,6 +12,9 @@ import SavedTasks from'./SavedTasks'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ProjectButton from './ProjectButton';
+import VideoPlayer from './VideoPlayer'
+import Menu from './Menu'
+
 
 const routing = (
     <Router>
@@ -23,6 +26,8 @@ const routing = (
         <Route path="/Button" component={Button} />
         <Route path="/Like" component={Like} />
         <Route path ="/ProjectButton" component={ProjectButton}/>
+        <Route path ="/VideoPlayer" component={VideoPlayer}/>
+        <Route path="/Menu" component={Menu}/>
        </div>
     </Router>
   )
