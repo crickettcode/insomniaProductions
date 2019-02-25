@@ -122,7 +122,10 @@ reset = () => {
        <Menu chooseVideo={this.chooseVideo}/>
      
        <ShadowCat src={this.state.NERDBRO}/>  
-       <ShadowCatMenu chooseCasey={this.chooseCasey}/>
+       <ShadowCatMenu
+          options={ Object.keys(NERD) } 
+          chooseCasey={this.chooseCasey}
+       />
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
        

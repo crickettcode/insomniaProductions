@@ -18,11 +18,17 @@ handleClick(e){
 
 render() {
     return (
-      <form onClick={this.handleClick}>
-        <input type="radio" name="src" value="derp" /> derp
-        <input type="radio" name="src" value="halp" /> halp
-        <input type="radio" name="src" value="why" /> why
-        <input type="radio" name="src" value="bro" /> bro
+      <form className ="box" onClick={this.handleClick}>
+        {
+            this.props.options.map(option=>(
+                <div className ="ten">
+                    <input key={option} type="radio" name="src" value={option} /> {option}
+                </div>
+                
+            ))
+
+        }      
+  
       </form>
     );
   }

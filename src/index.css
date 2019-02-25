@@ -108,8 +108,20 @@ ul.theList {
   outline: none;
 
   }
-
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+ .ten {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
   
+} 
+
+
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
