@@ -10,6 +10,7 @@ import SavedTasks from'./SavedTasks'
 import ProjectButton from './ProjectButton'
 import VideoPlayer from './VideoPlayer'
 import Menu from './Menu'
+import ShadowCat from './ShadowCat'
 
 const VIDEOS = {
   cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
@@ -25,7 +26,7 @@ class App extends Component {
       items:[],
       currentItem:{text:'',key:''},
       counter:0,
-      src:VIDEOS.fast
+      src:VIDEOS.cute
       // count:0
        }
       }
@@ -77,6 +78,7 @@ class App extends Component {
     }));
 };
 
+
 reset = () => {
   this.setState ({
       counter: 0,
@@ -103,6 +105,7 @@ reset = () => {
        <Menu chooseVideo={this.chooseVideo}/>
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
+       <ShadowCat/>
      </div>
     );
   }
