@@ -12,6 +12,7 @@ import VideoPlayer from './VideoPlayer'
 import Menu from './Menu'
 import ShadowCat from './ShadowCat'
 import ShadowCatMenu from './ShadowCatMenu'
+import BreadCrumbs from './BreadCrumbs'
 
 const VIDEOS = {
   cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
@@ -128,6 +129,7 @@ reset = () => {
        />
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
+       <BreadCrumbs/>
        
      </div>
     );

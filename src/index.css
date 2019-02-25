@@ -120,8 +120,26 @@ ul.theList {
   flex-direction: row-reverse;
   
 } 
+.white {
+  outline:none;
+}
 
+.black{
+  outline:none;
+}
 
+.light-button {
+  outline:none;
+}
+
+.dark-button {
+  outline:none;
+}
+
+button:focus {
+  outline:none !important;
+  /* outline: 5px auto -webkit-focus-ring-color; */
+}
 
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

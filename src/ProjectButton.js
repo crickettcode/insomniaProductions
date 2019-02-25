@@ -53,9 +53,9 @@ class ProjectButton extends Component {
   render() {
     return (
       <div>
-        <h6 className={this.isLight() ? 'white' : 'black'}>
-            {this.formatColor(this.state.color)}
-        </h6>
+         <h6 className={this.isLight() ? 'white' : 'black'}>
+            {/* {this.formatColor(this.state.color)}} */}
+         </h6> 
 <Button onClick ={this.handleClick} light ={this.isLight()}/>
       </div>
     );
