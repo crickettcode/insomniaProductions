@@ -11,23 +11,32 @@ import ProjectButton from './ProjectButton'
 import VideoPlayer from './VideoPlayer'
 import Menu from './Menu'
 
-
-// import Like from './Like'
-
-
+const VIDEOS = {
+  cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
+  eek: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-eek.mp4'
+};
 
 
 class App extends Component {
   constructor() {
     super()
+    this.chooseVideo=this.chooseVideo.bind(this)
     this.state = {
       items:[],
       currentItem:{text:'',key:''},
-      counter:0
+      counter:0,
+      src:VIDEOS.fast
       // count:0
-      
-    }
-  }
+       }
+      }
+
+  chooseVideo(newVideo){
+  this.setState({
+    src:VIDEOS[newVideo]
+  })
+}
+  
+  
   handleInput = e => {
     const itemText = e.target.value
     const currentItem = { text: itemText, key:
@@ -90,11 +99,11 @@ reset = () => {
        counter={this.state.counter}/>
        <SavedTasks/>
        <ProjectButton/>
-       <VideoPlayer/>
-       <Menu/>
+       <VideoPlayer src ={this.state.src}/>
+       <Menu chooseVideo={this.chooseVideo}/>
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
-      </div>
+     </div>
     );
   }
 }
