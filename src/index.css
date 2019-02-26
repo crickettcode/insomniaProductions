@@ -150,6 +150,26 @@ button:focus {
 }
 
 
+li.bc-icons.breadcrumb-item{
+  color:white;
+}
+
+a {
+  color:white !important;
+}
+  a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: lightpink !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  
+
+}
+  
+
+
+
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Route,
   Link,
-} from 'react-router-dom'
+} from 'react-router-dom';
+import './index.css'
 
 
 const Home = () =>
@@ -16,9 +17,9 @@ const Home = () =>
     <Router>
     <Container>
      
-      <MDBBreadcrumb color="white pink">
+      <MDBBreadcrumb color="black">
     
-        <MDBBreadcrumbItem iconRegular icon="circle"><a href ="/ProjectButtonHome">VideoPlayer</a></MDBBreadcrumbItem>
+        <MDBBreadcrumbItem color="white"iconRegular icon="circle"><a href ="/ProjectButtonHome">VideoPlayer</a></MDBBreadcrumbItem>
         <MDBBreadcrumbItem iconRegular icon="circle">Library</MDBBreadcrumbItem>
         <MDBBreadcrumbItem iconRegular icon="circle" >Data</MDBBreadcrumbItem>
       </MDBBreadcrumb>

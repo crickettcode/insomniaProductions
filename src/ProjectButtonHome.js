@@ -3,11 +3,12 @@ import Menu from './Menu'
 import VideoPlayer from './VideoPlayer'
 import './index.css';
 
+
 const VIDEOS = {
     cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
     eek: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-eek.mp4',
     fast:'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-fast.mp4',
-    slow:'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-slow.mp4'
+   
   };
   
 
@@ -33,6 +34,7 @@ class ProjectButtonHome extends Component {
 
     render(){
         return (
+            
             <div id ="videoPlayer"className="row">
             <div className ="col-md-12">
         <VideoPlayer src ={this.state.src}/>
@@ -40,6 +42,7 @@ class ProjectButtonHome extends Component {
         </div>
     
 </div>
+
         )
     }
 
