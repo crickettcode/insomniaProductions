@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-
-
-
+import './index.css';
 
 
 
@@ -20,10 +18,10 @@ handleClick(e){
 
 render() {
     return (
-      <form onClick={this.handleClick}>
+      <form className="form" onClick={this.handleClick}>
         <input type="radio" name="src" value="fast" /> fast
         <input type="radio" name="src" value="slow" /> slow
-        <input type="radio" name="src" value="cute" /> cute
+        <input type="radio" name="src" value="cute" defaultChecked ="cute"/> cute
         <input type="radio" name="src" value="eek" /> eek
       </form>
     );

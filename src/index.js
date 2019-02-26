@@ -14,9 +14,13 @@ import * as serviceWorker from './serviceWorker';
 import ProjectButton from './ProjectButton';
 import VideoPlayer from './VideoPlayer'
 import Menu from './Menu'
+import ShadowCat from './ShadowCat'
+import ProjectButtonHome from './ProjectButtonHome'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
+
+
 
 
 const routing = (
@@ -27,10 +31,13 @@ const routing = (
         <Route path="/TodoList" component={TodoList} />
         <Route path="/SavedTasks" component={SavedTasks} />
         <Route path="/Button" component={Button} />
-        <Route path="/Like" component={Like} />
+        {/* <Route path="/Like" component={Like} /> */}
         <Route path ="/ProjectButton" component={ProjectButton}/>
         <Route path ="/VideoPlayer" component={VideoPlayer}/>
         <Route path="/Menu" component={Menu}/>
+        <Route path="/ShadowCat" component={ShadowCat}/>
+        <Route path="/ProjectButtonHome" component={ProjectButtonHome}/>
+
        </div>
     </Router>
   )
@@ -45,3 +52,10 @@ ReactDOM.render(routing, document.getElementById('root'))
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
+export {
+  BrowserRouter as Router,
+  Route,
+  Link,
+} from 'react-router-dom'

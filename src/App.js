@@ -7,17 +7,11 @@ import Footer from './Footer'
 import Button from './Button'
 import Counter from './Counter'
 import SavedTasks from'./SavedTasks'
-import ProjectButton from './ProjectButton'
-import VideoPlayer from './VideoPlayer'
-import Menu from './Menu'
 import ShadowCat from './ShadowCat'
 import ShadowCatMenu from './ShadowCatMenu'
 import BreadCrumbs from './BreadCrumbs'
+import ProjectButton from './ProjectButton'
 
-const VIDEOS = {
-  cute: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-cute.mp4',
-  eek: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_video-eek.mp4'
-};
 
 const NERD = {
   derp:"https://www.youtube.com/embed/Q-KylmbTu78",
@@ -30,23 +24,17 @@ const NERD = {
 class App extends Component {
   constructor() {
     super()
-    this.chooseVideo=this.chooseVideo.bind(this)
     this.chooseCasey=this.chooseCasey.bind(this)
     this.state = {
       items:[],
       currentItem:{text:'',key:''},
       counter:0,
-      src:VIDEOS.cute,
       NERDBRO:NERD.derp
       // count:0
        }
       }
 
-  chooseVideo(newVideo){
-  this.setState({
-    src:VIDEOS[newVideo]
-  })
-}
+  
 
 chooseCasey(newCasey){
 
@@ -107,6 +95,7 @@ reset = () => {
   render() {
     return (
       <div className="App">
+       <BreadCrumbs/>
        <TodoList addItem={this.addItem}
        inputElement={this.inputElement}
        handleInput={this.handleInput}
@@ -119,17 +108,13 @@ reset = () => {
        counter={this.state.counter}/>
        <SavedTasks/>
        <ProjectButton/>
-       <VideoPlayer src ={this.state.src}/>
-       <Menu chooseVideo={this.chooseVideo}/>
-     
        <ShadowCat src={this.state.NERDBRO}/>  
        <ShadowCatMenu
           options={ Object.keys(NERD) } 
-          chooseCasey={this.chooseCasey}
-       />
+          chooseCasey={this.chooseCasey}/>
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
-       <BreadCrumbs/>
+      
        
      </div>
     );
