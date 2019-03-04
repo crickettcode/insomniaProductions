@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React,{Component} from 'react'
 import { MDBBreadcrumb, MDBBreadcrumbItem, Container } from "mdbreact";
 import {
   BrowserRouter as Router,
@@ -18,8 +18,7 @@ const Home = () =>
     <Container>
      
       <MDBBreadcrumb color="black">
-    
-        <MDBBreadcrumbItem color="white"iconRegular icon="circle"><a href ="/ProjectButtonHome">VideoPlayer</a></MDBBreadcrumbItem>
+      <MDBBreadcrumbItem color="white"iconRegular icon="circle"><a href ="/ProjectButtonHome">VideoPlayer</a></MDBBreadcrumbItem>
         <MDBBreadcrumbItem iconRegular icon="circle">Library</MDBBreadcrumbItem>
         <MDBBreadcrumbItem iconRegular icon="circle" >Data</MDBBreadcrumbItem>
       </MDBBreadcrumb>
@@ -31,4 +30,3 @@ const Home = () =>
 
 export default BreadCrumbs;
 
-// active

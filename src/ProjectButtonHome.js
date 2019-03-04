@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Menu from './Menu'
 import VideoPlayer from './VideoPlayer'
+import ProjectButton from './ProjectButton'
 import './index.css';
 
 
@@ -11,10 +12,6 @@ const VIDEOS = {
    
   };
   
-
-
-
-
 
 class ProjectButtonHome extends Component {
     constructor() {
@@ -34,14 +31,13 @@ class ProjectButtonHome extends Component {
 
     render(){
         return (
-            
-            <div id ="videoPlayer"className="row">
-            <div className ="col-md-12">
-        <VideoPlayer src ={this.state.src}/>
-        <Menu chooseVideo={this.chooseVideo}/>
-        </div>
-    
-</div>
+            <div id="videoPlayer" className="row">
+                <div className="col-md-12">
+                    <VideoPlayer src={this.state.src} />
+                    <Menu chooseVideo={this.chooseVideo} />
+                </div>
+                <ProjectButton />
+            </div>
 
         )
     }

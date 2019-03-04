@@ -2,8 +2,6 @@ import React, {Component} from 'react'
 import './index.css';
 
 
-
-
 class Menu extends Component {
     constructor(props){
         super(props)
@@ -13,7 +11,6 @@ class Menu extends Component {
 
 handleClick(e){
     const text = e.target.value;
-    console.log(text)
     this.props.chooseVideo(text)
 }
 

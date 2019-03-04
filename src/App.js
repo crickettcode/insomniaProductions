@@ -115,9 +115,7 @@ reset = () => {
           chooseCasey={this.chooseCasey}/>
       {/* <Like handleClick={this.handleClick}
        count={this.state.count}/> */}
-      
-       
-     </div>
+      </div>
     );
   }
 }

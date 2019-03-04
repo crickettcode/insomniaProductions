@@ -3,12 +3,15 @@ import Button from './Button';
 import ReactDOM from 'react-dom';
 import { NONAME } from 'dns';
 
+
+
+
 class ProjectButton extends Component {
   constructor(props){
     super(props);
     this.state = {
-      color:[6,100,85]
-    
+      color:[6,100,85],  
+     
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -33,7 +36,8 @@ class ProjectButton extends Component {
 
   applyColor() {
     const color = this.formatColor(this.state.color);
-    document.body.style.background = color;
+    document.body.style.background= color;
+
   }
 
   chooseColor() {
